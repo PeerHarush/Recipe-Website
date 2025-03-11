@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Yami Home Page</title>
+</head>
+
+<body>
+  <!-- Main header for the page-->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="Images/logo.jpg" alt="Our Logo" height="40"></a>
+
+        <!-- "Burger" navigation menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <!-- A Meat Category functioning page -->
+            <li class="nav-item">
+              <a class="nav-link" href="Includes/meat.html">Meat</a>
+            </li>
+            <!-- Disabeled category page -->
+            <li class="nav-item illustration">
+              <a class="nav-link" href="#">Fish</a>
+            </li>
+            <!-- Disabeled category page -->
+            <li class="nav-item illustration">
+              <a class="nav-link" href="#">Soups</a>
+            </li>
+            <!-- Disabeled category page -->
+            <li class="nav-item illustration">
+              <a class="nav-link" href="#">Salads</a>
+            </li>
+            <!-- Disabeled category page -->
+            <li class="nav-item illustration">
+              <a class="nav-link" href="#">Cakes</a>
+            </li>
+            <!-- Disabeled category page -->
+            <li class="nav-item illustration">
+              <a class="nav-link" href="#">Cookies</a>
+            </li>
+
+            <!-- Profile dropdown menu-->
+            <li class="nav-item dropdown border rounded">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Profile
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Includes/profile.html">My Profile</a></li>
+                <li><a class="dropdown-item illustration" href="#">Saved Recipes</a></li>
+                <li><a class="dropdown-item illustration" href="#">Settings</a></li>
+                <li><a class="dropdown-item text-danger illustration" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- search bar-->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 illustration" type="Search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success illustration" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="mt-6">
+      <!-- Trending recepies -->
+      <h2 id="title">Trending 🔥</h2>
+      <div class="row">
+        <div class="col-md-6 d-lg-flex d-md-flex">
+          <a href="Includes/cookie.html" class="none-decoration text-dark">
+            <div class="card mb-4 box-shadow border border-dark">
+              <img src="Images/trending/Hero-Image-2-1-scaled-qx0dbbjvght7ushb9dw7yi6naa0xgpmcba2fiomaz4.jpg"
+                class="card-img-top" alt="Crumble Cookies">
+              <div class="card-body">
+                <h5 class="card-title">Crumble Cookies</h5>
+                <p class="card-text">Deliciously soft cookies topped with a sweet crumble and drizzled with icing.
+                  Perfect for any dessert lover.</p>
+                <p class="card-text"> ❤️1200 💬131</p>
+                <p class="card-text mt-3"><small class="text-body-secondary">Uploaded by <a href="Includes/profile.html"
+                      class="none-decoration">Yael Regev</a></small></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-6 d-lg-flex d-md-flex illustration">
+          <div class="card mb-4 box-shadow">
+            <img src="Images/trending/images.jpg" class="card-img-top" alt="Tomato Soup">
+            <div class="card-body">
+              <h5 class="card-title">Tomato Soup</h5>
+              <p class="card-text">A creamy and rich tomato soup garnished with basil and Parmesan. Warm, comforting,
+                and perfect for cold days.</p>
+              <p class="card-text"> ❤️1001 💬120</p>
+              <p class="card-text"><small class="text-body-secondary">Uploaded by Idan Amedi</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 d-lg-flex d-md-flex illustration">
+          <div class="card mb-4 box-shadow">
+            <img src="Images/trending/Basic-Vanilla-Cake-1-of-1.jpg" class="card-img-top" alt="Vanilla Cake">
+            <div class="card-body">
+              <h5 class="card-title">Vanilla cake</h5>
+              <p class="card-text">Classic fluffy vanilla cake layered with smooth buttercream frosting. A timeless
+                favorite for all occasions.</p>
+              <p class="card-text"> ❤️973 💬102</p>
+              <p class="card-text"><small class="text-body-secondary">Uploaded by Keren Peles</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-lg-flex d-md-flex illustration">
+          <div class="card mb-4 box-shadow">
+            <img
+              src="Images/trending/bhg-recipe-layer-cakes-best-loved-carrot-cake-Hero-01-de4fa105721e4b27bf4a21373e147092.jpg"
+              class="card-img-top" alt="Carrot Cake">
+            <div class="card-body">
+              <h5 class="card-title">Carrot Cake</h5>
+              <p class="card-text">Moist carrot cake with a hint of cinnamon, topped with creamy cream cheese frosting
+                and chopped pecans.</p>
+              <p class="card-text"> ❤️706 💬10</p>
+              <p class="card-text"><small class="text-body-secondary">Uploaded by Eden Hasson</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!-- Recent Recepies -->
+      <h2>Recents 🕗</h2>
+      <div class="row">
+        <div class="col-md-6 d-lg-flex d-md-flex illustration">
+          <div class="card mb-4 box-shadow">
+            <img src="Images/recents/download.jpg" class="card-img-top" alt="Salmon with Lemon">
+            <div class="card-body">
+              <h5 class="card-title">Salmon with Lemon</h5>
+              <p class="card-text">Juicy salmon fillet seasoned with herbs and served alongside lemon slices and fresh
+                vegetables. A perfect healthy dish.</p>
+              <p class="card-text"> ❤️2 💬0</p>
+              <p class="card-text"><small class="text-body-secondary">Uploaded by Eyal Golan</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-lg-flex d-md-flex illustration">
+          <div class="card mb-4 box-shadow">
+            <img src="Images/recents/WhatsApp Image 2024-12-16 at 23.12.52_10676827.jpg" class="card-img-top"
+              alt="spaghetti Alfredo">
+            <div class="card-body">
+              <h5 class="card-title">spaghetti Alfredo</h5>
+              <p class="card-text">Cheesy pasta dish with a tangy tomato flavor, garnished with jalapeños and sour
+                cream. A meal your kids won't resist.</p>
+              <p class="card-text"> ❤️9 💬1</p>
+              <p class="card-text"><small class="text-body-secondary">Uploaded by Ninet Tayeb</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 d-lg-flex d-md-flex illustration">
+          <div class="card mb-4 box-shadow">
+            <img src="Images/recents/WhatsApp Image 2024-12-16 at 23.13.21_8c1d7ddb.jpg" class="card-img-top"
+              alt="Pancakes">
+            <div class="card-body">
+              <h5 class="card-title">Pancakes</h5>
+              <p class="card-text">Fluffy stack of golden pancakes drizzled with maple syrup and topped with fresh
+                berries. Perfect for a sweet breakfast or brunch.</p>
+              <p class="card-text"> ❤️28 💬7</p>
+              <p class="card-text"><small class="text-body-secondary">Uploaded by Ninet Tayeb</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-lg-flex d-md-flex illustration">
+          <div class="card mb-4 box-shadow">
+            <img src="Images/recents/WhatsApp Image 2024-12-16 at 23.14.07_1199e1a4.jpg" class="card-img-top"
+              alt="Pasta that your kid will LOVE!">
+            <div class="card-body">
+              <h5 class="card-title">Pasta that your kid will LOVE!</h5>
+              <p class="card-text">Creamy spaghetti with a rich tomato sauce, topped with Parmesan and basil. A
+                family-friendly favorite!</p>
+              <p class="card-text"> ❤️12 💬2</p>
+              <p class="card-text"><small class="text-body-secondary">Uploaded by Noa Kirel</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tips -->
+      <div class=" col-12 col-md-12 d-lg-flex d-md-flex row">
+
+        <div class=" mb-4 bg-blue text-white rounded-3 hugh">
+          <h3>Weekly Tip 🌟</h3>
+          <h5>Clean as you go!</h5>
+          <p class="lead"> Tidying up your workspace while cooking saves time and reduces stress when you’re done.</p>
+        </div>
+
+        <div class="mb-4 bg-blue text-white rounded-3 hugh">
+          <h3>Did you know?</h3>
+          <p class="lead"> The world's most popular recipe is for chocolate chip cookies.
+            The recipe was accidentally created in 1938 when Ruth
+            Wakefield added chocolate chunks into her dough, expecting them to melt.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="col-md-12 container text-body-secondary">
+    <h1>About Us!</h1>
+    <p class="lead">This project was created as part of Web Development course.</p>
+    <p>We created this social network to allow everyone to easily share their favorite recipes.<br>
+      Our goal is to build a platform that brings food lovers together, making it fun and simple to share
+      cooking inspiration.<br>
+      Thank you for visiting our project! We hope you enjoy using the platform as much as we enjoyed building it.
+    </p>
+    <p class="mb-1">© 2024 Yami!</p>
+    <p class="mb-0">Created by Pe'er, Ofir and Assaf.</p>
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+</body>
+
+</html>

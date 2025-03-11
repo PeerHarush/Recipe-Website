@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+.card img {
+    height: 250px;
+    margin-top: 5%;
+    object-fit: cover;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.hov:hover {
+    background-color: whitesmoke;
+}
+
+.card-body {
+    margin-right: 1%;
+    margin-left: 3%;
+}
+
+.lead {
+    font-style: bold;
+    color: black;
+}
+
+.bg-custom {
+    background-color: #ebf5ff;
+}
+
+/* This class is used to mark which items are disabeled and only appear for illustration. */
+.illustration {
+    position: relative;
+    display: inline-block;
+    cursor: not-allowed;
+}
+
+.illustration::after {
+    content: "disabled";
+    position: absolute;
+    bottom: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.illustration:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+#follow-msg {
+    position: relative;
+    top: -50px;
+    left: -300px;
+}
+
+
+
+
+@media (max-width: 930px) {
+
+    /* גודל בינוני ומטה */
+    .navbar-collapse {
+        max-height: 80vh;
+        /* עד 80% מגובה המסך */
+        overflow-y: auto;
+        /* גלילה אנכית */
+    }
+
+    .hugh {
+        margin-left: 3%;
+    }
+
+    #title {
+        margin-top: 18%
+    }
+
+    #follow-msg {
+        top: -80px;
+        left: -150px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    /* מסכים גדולים (מחשב) */
+    .hugh {
+        margin-left: 1%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .hugh {
+        margin-left: 1.5%;
+    }
+
+    #title {
+        margin-top: 10%
+    }
+}
