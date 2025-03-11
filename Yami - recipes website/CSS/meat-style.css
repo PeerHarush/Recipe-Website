@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    width: 80%;
+}
+
+aside {
+    background-color: #efb8b8;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+footer {
+    width: 100%;
+}
+
+.cont {
+    display: flex;
+    height: 80%;
+    flex-wrap: wrap;
+}
+
+.card img {
+    height: 250px;
+    margin-top: 5%;
+    object-fit: cover;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.card:hover {
+    background-color: whitesmoke;
+}
+
+.card-body {
+    margin-right: 1%;
+    margin-left: 3%;
+}
+
+.bg-custom {
+    background-color: #ebf5ff;
+}
+
+.meat-header {
+    background-image: url("../Images/meat/meat-bg.jpg");
+    height: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.category {
+    font-size: 1.5em;
+    margin-bottom: 10%;
+}
+
+.category:hover {
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.illustration {
+    position: relative;
+    display: inline-block;
+    cursor: not-allowed;
+}
+
+.illustration::after {
+    content: "disabled";
+    position: absolute;
+    bottom: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.illustration:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.none-decoration {
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 930px) {
+
+    /* גודל בינוני ומטה */
+    .navbar-collapse {
+        max-height: 80vh;
+        /* עד 80% מגובה המסך */
+        overflow-y: auto;
+        /* גלילה אנכית */
+    }
+}
+
+@media (max-width: 930px) {
+
+    main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .category {
+        margin-bottom: 0px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .category {
+        font-size: 1em;
+    }
+}
